@@ -1,15 +1,15 @@
 {
   "name": "ccharts",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "description": "Simple Chart for Vue3 by CCH",
-  "main": "./dist/ccharts.umd.js",
+  "main": "./dist/ccharts.umd.cjs",
   "module": "./dist/ccharts.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-   "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -26,7 +26,7 @@
   "exports": {
     ".": {
       "import": "./dist/ccharts.js",
-      "require": "./dist/ccharts.umd.js"
+      "require": "./dist/ccharts.umd.cjs"
     }
   },
   "typesVersions": {
@@ -38,8 +38,7 @@
     }
   },
   "files": [
-    "dist"
-
+    "dist","src"
   ],
   "keywords": [
     "vue",

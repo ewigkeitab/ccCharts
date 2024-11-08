@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "node:path";
 import dts from "vite-plugin-dts";
-
+import * as path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), dts()],
@@ -21,4 +21,9 @@ export default defineConfig({
       },
     },
   },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src")
+    }
+  }
 });
