@@ -4,8 +4,8 @@
   "version": "0.0.2",
   "type": "module",
   "description": "Simple Chart for Vue3 by CCH",
-  "main": "./dist/ccharts.umd.cjs",
-  "module": "./dist/ccharts.js",
+  "module": "./dist/ccharts.umd.cjs",
+  "main": "./dist/ccharts.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
@@ -22,12 +22,6 @@
     "vite": "^5.4.10",
     "vite-plugin-dts": "^4.3.0",
     "vue-tsc": "^2.1.8"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/ccharts.js",
-      "require": "./dist/ccharts.umd.cjs"
-    }
   },
   "typesVersions": {
     "*": {
