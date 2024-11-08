@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import  BadgeChart  from "./lib/components/BadgeChart.vue";
+import  BadgeChart  from "../lib/components/BadgeChart.vue";
 
 </script>
 

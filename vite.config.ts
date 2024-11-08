@@ -8,9 +8,9 @@ export default defineConfig({
   plugins: [vue(), dts()],
   build: {
     lib: {
-      entry: resolve(__dirname, "src/lib/index.ts"),
-      name: "ccCharts",
-      fileName: "ccCharts",
+      entry: resolve(__dirname, "lib/index.ts"),
+      name: "ccharts",
+      fileName: "ccharts",
     },
     rollupOptions: {
       external: ["vue"],
