@@ -23,6 +23,13 @@
     "vite-plugin-dts": "^4.3.0",
     "vue-tsc": "^2.1.8"
   },
+  "exports": {
+
+  "./dist/style.css": {
+    "import": "./dist/style.css",
+    "require": "./dist/style.css"
+  }
+},
   "typesVersions": {
     "*": {
       "*": [
