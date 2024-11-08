@@ -1,5 +1,8 @@
-import { defineComponent as r, openBlock as _, createElementBlock as d, createElementVNode as n, toDisplayString as c } from "vue";
-const i = { class: "outline large_width" }, p = { class: "mainText" }, l = { class: "secText" }, m = /* @__PURE__ */ r({
+import { defineComponent as _, openBlock as r, createElementBlock as d, createElementVNode as s, toDisplayString as a } from "vue";
+const i = { class: "outline large_width" }, p = { class: "mainText" }, l = { class: "secText" }, m = {
+  name: "BadgeChart"
+}, x = /* @__PURE__ */ _({
+  ...m,
   __name: "BadgeChart",
   props: {
     mainText: {},
@@ -7,17 +10,17 @@ const i = { class: "outline large_width" }, p = { class: "mainText" }, l = { cla
   },
   setup(t) {
     const e = t;
-    return (o, s) => (_(), d("div", i, [
-      n("div", p, c(e.mainText), 1),
-      n("div", l, c(e.secondText), 1)
+    return (o, n) => (r(), d("div", i, [
+      s("div", p, a(e.mainText), 1),
+      s("div", l, a(e.secondText), 1)
     ]));
   }
-}), x = (t, e) => {
+}), h = (t, e) => {
   const o = t.__vccOpts || t;
-  for (const [s, a] of e)
-    o[s] = a;
+  for (const [n, c] of e)
+    o[n] = c;
   return o;
-}, h = /* @__PURE__ */ x(m, [["__scopeId", "data-v-0d262f5f"]]);
+}, g = /* @__PURE__ */ h(x, [["__scopeId", "data-v-976a876a"]]);
 export {
-  h as BadgeChart
+  g as BadgeChart
 };

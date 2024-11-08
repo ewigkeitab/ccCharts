@@ -13,9 +13,9 @@ const props = defineProps<{
 }>();
 </script>
 <script lang="ts">
-// export default {
-//   'name': "BadgeChart",
-// };
+export default {
+  'name': "BadgeChart",
+};
 </script>
 <style scoped>
 .outline {

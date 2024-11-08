@@ -9,7 +9,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
